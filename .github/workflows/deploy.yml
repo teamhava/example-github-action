@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  check-dist:
+  sync:
     runs-on: ubuntu-latest
 
     steps:
@@ -22,3 +22,4 @@ jobs:
           environment_id: ${{ secrets.HAVA_ENV_ID }}
           view_type: "infrastructure"
           image_path: "doco/diagram.png"
+          skip_export: false
