@@ -18,7 +18,7 @@ jobs:
       - uses: teamhava/hava-sync-action@main
         with:
           source_id: ${{ secrets.HAVA_SOURCE_ID }}
-          hava_token: ${{ secrets.HAVA_TOKEN }}
+          hava_token: ${{ secrets.HAVA_API_TOKEN }}
           environment_id: ${{ secrets.HAVA_ENV_ID }}
           view_type: "infrastructure"
           image_path: "doco/diagram.png"
