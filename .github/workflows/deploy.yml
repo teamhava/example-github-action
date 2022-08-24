@@ -1,0 +1,24 @@
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - '**.md'
+  pull_request:
+    paths-ignore:
+      - '**.md'
+  workflow_dispatch:
+
+jobs:
+  check-dist:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: teamhava/hava-sync-action@main
+        with:
+          source_id: ${{ secrets.HAVA_SOURCE_ID }}
+          hava_token: ${{ secrets.HAVA_TOKEN }}
+          environment_id: ${{ secrets.HAVA_ENV_ID }}
+          view_type: "infrastructure"
+          image_path: "doco/diagram.png"
