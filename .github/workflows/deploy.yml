@@ -23,3 +23,8 @@ jobs:
           view_type: "infrastructure"
           image_path: "doco/diagram.png"
           skip_export: false
+      - name: Commit new diagram
+        run: |
+          git add .
+          git commit -m "Auto-updated diagram"
+          git push
