@@ -15,7 +15,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - uses: teamhava/hava-sync-action@main
+      - uses: teamhava/hava-sync-action@v1
         with:
           source_id: ${{ secrets.HAVA_SOURCE_ID }}
           hava_token: ${{ secrets.HAVA_API_TOKEN }}

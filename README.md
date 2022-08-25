@@ -7,6 +7,6 @@ See the [github workflow](.github/workflows/deploy.yml) for details on how it ha
 
 Details the of the action is in the [hava-sync-action](https://github.com/teamhava/hava-sync-action) repo
 
-## generated architecture diagram
+## Generated architecture diagram
 
 ![diagram](doco/diagram.png)
